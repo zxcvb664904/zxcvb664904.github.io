@@ -29,10 +29,10 @@ var nebPay = new NebPay();
 
 
 
-if (typeof(webExtensionWallet) === "undefined") {
+//if (typeof(webExtensionWallet) === "undefined") {
 
-  alert("请首先安装webExtensionWallet插件");
-}
+  //alert("请首先安装webExtensionWallet插件");
+//}
 
 
 $(".loading_div").hide();

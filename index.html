@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>BlockChainCreditLetter</title>
+  <meta name="description" content="nebulas blockchain universe" />
+
+  <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.planetarium.js"></script>
+  <link href='css/planetarium.css' rel='stylesheet' type='text/css'>
+  <link href='css/back.css' rel='stylesheet' type='text/css'>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+
+
+</head>
+<body>
+  <header id="header_wrapper">
+    <div class="container">
+      <div class="header_box">
+
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html" style="font-size: 30px">区块链信用证（简化版）</a>
+          </div>
+          <div id="main-nav" class="collapse navbar-collapse navStyle">
+           <ul class="nav navbar-nav" id="mainNav">
+                <li class="active"><a class="nav-link" href="#">初始化信用证</a></li>
+                <li><a href="./editCreditLetter.html" class="scroll-link">发货</a></li>
+                <li><a href="./ortherCreditLetter.html" class="scroll-link">信用证其他操作</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+<section id="bodydata">
+    <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+        <div class="container">
+
+            <div class="add_human_detail">
+                <hr>
+                <h2>init Credit Letter</h2>
+                <h6>初始化信用证</h6>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info" role="alert">请复制或者牢记生成的唯一ID，否则信用证可能丢失！</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="进口人的名称" id="inname"/>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="进口人的地址" id="inaddress"/>
+                    </div>
+                    <div class="col-md-4">
+                            <input type="text" class="form-control input-text" placeholder="发送星云币金额（数字）" id="amount"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="出口人的名称" id="outname"/>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="出口人的地址" id="outaddress"/>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="出口人星云地址" id="outnasaddress"/>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="货物的名称" id="cargoname"/>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="货物的品质" id="cargoquality"/>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control input-text" placeholder="货物的数量" id="cargocount"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="text" class="form-control input-text" placeholder="货物的单价" id="cargoprice"/>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control input-text" placeholder="货物的运输方式" id="cargotrans"/>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control input-text" placeholder="开证日期" id="date"/>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control input-text" placeholder="有效期" id="expirationdate"/>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary input-btn pull-right" id="add_human_detail">Send</button>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <br>
+
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript" src=js/nebPay.js></script>
+<script type="text/javascript" src=js/nebulas.js></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="myjs/sha1.js"></script>
+
+
+<script type="text/javascript" src="myjs/addcl.js"></script>
+
+
+
+
+</body>
+</html>
